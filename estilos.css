@@ -70,23 +70,41 @@ a{
 }
 
 /*baner de pago*/
-.banner-pago{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.banner-trans {
     background-color: rgb(18, 92, 40);
 }
-.banner-pago img{
-   width: 55%;
+
+.banner-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(290px,auto));
+    gap:15px;
+    width: 70%;
+    margin:0 auto;
+  
+}
+
+.banner-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.banner-grid img:hover {
+    transform: scale(1.1);
 }
 
 /*Productos*/
 .index-post {
-    width: 1124px; transition: all 1.5s;
-    height: 364px; overflow: hidden; 
+    width: 1124px; 
+    transition: all 1.5s;
+    min-height: 700px; 
+    overflow: hidden; 
     margin: auto;
     display: block;
-    margin-top: 10%;
+    margin-top: 25px;
+    text-align: center;
+    color: rgb(15, 78, 34);
 }
 
 .contener {
@@ -106,7 +124,7 @@ a{
 
 .contener:hover {
     transform: translateY(-6px);
-    box-shadow: 0 11px 14px rgb(0 0 0 / 25%), 0 8px 20px rgb(0 0 0 / 10%);
+    box-shadow: 0 11px 14px rgb(18 92 40 / 25%), 0 8px 20px rgb(18, 92 40 / 10%);
 }
 
 .image-contener {
@@ -132,13 +150,9 @@ a{
     padding: 0;
     margin: 10px 0;
     font-size: 22px;
-    color: #0076b6;
-}
-
-.meta-contener .desc {
-    font-size: 13px;
+    color: rgb(15, 78, 34);
     text-align: center;
-    color: #373737;
+    text-transform: uppercase;
 }
 
 .button-contener {
@@ -153,17 +167,15 @@ a{
     width: 100%;
     padding: 6px 0;
     text-decoration: none;
-    background: linear-gradient(125deg, #00ff35 0%, #0091a7 60%);
+    background: linear-gradient(125deg, rgb(50, 242, 108) 0%, rgb(15, 78, 34) 60%);
     color: #fff;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 20px;
     transition: all 0.3s;
 
 }
 
-.button-contener .button:hover {
-    padding-left: 15px;
-}
+/*media queri para productos*/
 
 @media screen and (max-width:1124px){
     .index-post{
