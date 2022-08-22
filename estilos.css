@@ -69,29 +69,56 @@ a{
     background-color: white;
 }
 
-/*baner de pago*/
-.banner-trans {
-    background-color: rgb(18, 92, 40);
+/*slider*/
+.container-slider{
+    background-color: rgba(18, 92, 40, 0.2);
 }
-
-.banner-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(290px,auto));
-    gap:15px;
-    width: 70%;
-    margin:0 auto;
-  
-}
-
-.banner-grid img {
+.marco{
     width: 100%;
-    border-radius: 10px;
-    transition: transform 0.2s ease;
-    cursor: pointer;
+    height: auto;
+    margin: 0 auto 0;
+    overflow: hidden;
+}
+.marco ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slider 14s infinite alternate ease-in;   
+}
+.marco li{
+    width: 100%;
+    list-style: none;
+    
+}
+.marco img{
+    width: 100%;
+}
+@keyframes slider{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    75%{margin-left: -200%;}
+
+    80%{margin-left: -300%;}
+    100%{margin-left: -300%;}
 }
 
-.banner-grid img:hover {
-    transform: scale(1.1);
+/*Lista de precio*/
+.lista-act{
+    text-align: center;
+    width: 100%;
+    background-color: rgba(18, 92, 40, 0.3)
+}
+.lista-act h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+.lista-act a{
+    text-transform: lowercase;
+    color: red
 }
 
 /*Productos*/
@@ -105,6 +132,10 @@ a{
     margin-top: 25px;
     text-align: center;
     color: rgb(15, 78, 34);
+}
+.index-post .titulo-prod{
+    text-transform: uppercase;
+    color: rgb(18, 92, 40);
 }
 
 .contener {
@@ -175,6 +206,18 @@ a{
 
 }
 
+/*Productos nuevos*/
+.titulo-prod-nuevo{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.titulo-prod-nuevo{
+    text-transform: uppercase;
+    color: rgb(18, 92, 40);
+}
+
+
 /*Ventana emergente*/
 .modal {
 	width: 100%;
@@ -194,8 +237,8 @@ a{
 
 .contenido {
 	margin: auto;
-	width: 40%;
-	height: 40%;
+	width: 70%;
+	height: 60%;
     background-color: red;
     border-radius: 10px;
 }
@@ -293,18 +336,25 @@ a{
    Left:0;
 }
 .navbar{
-    justify-content: center;
+    justify-content: space-between;
 }
 .navbar img{
-    display: none;
+    width: 240px;
 }
 }
-/*media queri para menu lateral*/
+
+/*media queri para slider*/
+@media(max-width:720px){
+.marco{
+    width: 90%;
+}
+}
+/*media queri para ventana emergente*/
 @media(max-width:890px){
     .contenido{
     margin: auto;
-	width: 90%;
-	height: 40%;
+	width: 70%;
+	height: 25%;
     background-color: white;
     border-radius: 10px;
     }
