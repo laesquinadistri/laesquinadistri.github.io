@@ -111,7 +111,7 @@ a{
 .index-post {
     width: 1124px; 
     transition: all 1.5s;
-    min-height: 700px; 
+    min-height: 900px; 
     overflow: hidden; 
     margin: auto;
     display: block;
@@ -260,13 +260,14 @@ a{
 
 @media screen and (max-width:1124px){
     .index-post{
-        width: 562px; height: 728px;
+        width: 562px; min-height: 728px;
     }
 }
 @media screen and (max-width:562px){
     .index-post{
-        width: 281px; height: 1496px;
+        width: 281px; min-height: 1496px;
     }
+
 }
 
 
