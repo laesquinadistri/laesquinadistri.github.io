@@ -122,6 +122,7 @@ a{
 .index-post .titulo-prod{
     text-transform: uppercase;
     color: rgb(18, 92, 40);
+    margin-bottom: 25px;
     
 }
 
@@ -291,7 +292,7 @@ a{
 
 @media screen and (max-width:1124px){
     .index-post{
-        width: 562px; min-height: 728px;
+        width: 562px; min-height: 900px;
     }
 }
 @media screen and (max-width:562px){
