@@ -122,8 +122,10 @@ a{
 .index-post .titulo-prod{
     text-transform: uppercase;
     color: rgb(18, 92, 40);
+}
+.titulo-descrip{
+    color: red;
     margin-bottom: 25px;
-    
 }
 
 .contener {
